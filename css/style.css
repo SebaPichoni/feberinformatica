@@ -1,0 +1,501 @@
+@font-face {
+    font-family: klavika-regular;
+    src: url(../klavika/Klavika-Regular.otf);
+}
+
+@font-face {
+    font-family: klavika-bold;
+    src: url(../klavika/Klavika-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: klavika-regular;
+    box-sizing: border-box;
+}
+
+
+/*! ------ INDEX ------ */
+/*! ------ Header ------ */
+header {
+    background-color: black;
+    background-attachment: fixed;
+    font-size: 30px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    font-family: klavika-regular;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+header h1 {
+    font-family: klavika-bold;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+    flex-direction: column;
+    -webkit-text-stroke: 0.5px rgb(183, 199, 42);
+}
+
+header nav ul { 
+    list-style-type: none;
+    font-style: italic;
+    font-weight: 300;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    font-family: klavika-regular;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+    margin: 20px;
+}
+
+header nav ul li a:hover {
+        filter: brightness(1.3);
+        color: rgb(183, 199, 42);
+}
+
+.hero {
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: klavika-regular;
+    height: 350px;
+    width: 70%;
+    background-image: url("../img/Hero\ Banner\ 2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+.hero h2 { 
+    font-family: klavika-bold;
+    text-align: center;
+    font-size: 60px;
+    color: rgba(140, 155, 7, 0.973);
+    -webkit-text-stroke: 1px white;
+}
+
+.hero p { 
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 20px;
+}
+
+.promociones-contenedor h4 {
+    font-family: klavika-regular;
+}
+
+.promociones h3 {
+    font-size: 30px;
+    background-color: black;
+    text-align: center;
+    color: whitesmoke;
+    font-family: klavika-bold;
+}
+
+.promociones a{
+    text-decoration: none;
+    color: rgb(74, 199, 188);
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: klavika-regular;
+
+}
+
+.promociones-contenedor div h4 {
+    font-family: klavika-bold;
+}
+
+.promociones-contenedor div {
+    border: 1px solid darkgrey;
+    width: 320px;
+    height: 440px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 5px 8px 34px -1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 5px 8px 34px -1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 5px 8px 34px -1px rgba(0,0,0,0.52);
+}
+
+.promociones .promociones-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.promociones img {
+    padding: 10px;
+}
+
+.categorias img {
+    width: 100px;
+    height: 100px;
+}
+
+.categorias h3 {
+    font-family: klavika-bold;
+    font-size: 30px;
+    background-color: black;
+    text-align: center;
+    color: whitesmoke
+}
+
+.categorias .categorias-contenedor div {
+    font-family: klavika-bold;
+    border: 2px solid darkgrey;
+    width: 160px;
+    height: 170px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.57);
+}
+
+.categorias .categorias-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.categorias .categorias-contenedor h4 {
+    font-family: klavika-bold;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.categorias-contenedor div:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.2);
+    background-color: rgba(0, 0, 0, 0.041);
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+    background-color: rgb(232, 247, 236);
+    font-size: 20px;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.info div h4 {
+    font-family: klavika-bold;
+}
+
+.info img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+/*! ------ Footer ------ */
+
+footer {
+    padding: 10px;
+    background-color: black;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer img { 
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: klavika-bold;
+    color: white;
+}
+
+footer .maps-footer {
+    width: 150%;
+    height: 50%;
+}
+
+
+/*! ------ SERVICIOS ------ */
+
+.servicios-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios img {
+    margin: 20px;
+    height: 350px;
+    border-radius: 16px;
+}
+
+.servicios h2 {
+    font-family: klavika-bold;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.servicios p {
+    font-family: klavika-regular;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+}
+
+/*! ------ NOSOTROS ------ */
+
+.nosotros-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros img {
+    margin: 20px;
+    height: 350px;
+    width: 56%;
+    border-radius: 16px;
+}
+
+.nosotros h2 {
+    font-family: klavika-bold;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.nosotros p {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    font-family: klavika-regular;
+}
+
+/*! ------ PRODUCTOS ------ */
+
+.productos img {
+    width: 100px;
+    height: 100px;
+}
+
+.productos h3 {
+    font-size: 15px;
+}
+
+.productos h2 {
+    font-family: klavika-bold;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px
+}
+
+.productos .productos-contenedor div {
+    border: 2px solid darkgrey;
+    width: 130px;
+    height: 170px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.57);
+}
+
+.productos .productos-contenedor div h3 {
+    padding-top: 10px;
+    font-family: klavika-bold;
+}
+
+.productos .productos-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.productos-contenedor div:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.2);
+    background-color: rgba(0, 0, 0, 0.041);
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
+    margin: 40px;
+}
+
+.grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.grid-galeria div{
+    position: relative;
+}
+
+.grid-galeria div h3 {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(15, 112, 88, 0.5);
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-family: klavika-bold;
+    font-size: 25px;
+}
+
+.grid-img1 {
+    grid-row:span 2
+}
+
+.grid-galeria h2 {
+    grid-column: span 4;
+}
+
+/*! ------ CONTACTO ------ */
+
+.contacto {
+    font-family: klavika-regular;
+    border: 2px solid darkgrey;
+    width: 600px;
+    height: 230px;
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-family: klavika-bold;
+}
+
+.map-contacto {
+    margin: 30px;
+    margin-bottom: 40px;
+}
+
+.data-fiscal img {
+    width: 200px;
+    height: auto;
+}
+
+/* Implementando Bootstrap */
+
+.mb-3 {
+    margin: 40px;
+    width: 500px;
+}
+
+.mb-3 .btn {
+    margin-top: 10px;
+    background-color: rgb(183, 199, 42);
+    border-color: rgba(124, 136, 17, 0.973);
+}
+
+.titulo-form {
+    margin: 40px;
+    margin-bottom: 10px;
+}
+
+.titulo-form h2 {
+    font-family: klavika-bold;
+}
+
+.mb-3 .btn-primary:hover {
+    background-color: rgba(140, 155, 7, 0.973);
+    border-color: rgba(124, 136, 17, 0.973);
+}
+
+/*! ------ MEDIA QUERIES ------ */
+    /*! ------ INDEX ------ */
+
+@media screen and (max-width:940px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 { 
+        font-size: 50px;
+    }
+    .hero p { 
+        font-size: 20px;
+    }
+ .hero {
+    height: 200px;
+    width: 65%;
+ }
+
+}
+
+     /*! ------ PRODUCTOS ------ */
+
+
+
+
+
+
+
+
+/*! ------ PALETA DE COLORES ------ */
+     /*! ------ PRINCIPAL ------ */
+     /* R=183 G=199 B=42 */
+     /* Black */
+
+      /*! ------ SECUNDARIO ------ */
+      /* botones-hover: 140, 155, 7, 0.973 */
+      /* botones-border: 124, 136, 17, 0.973 */
