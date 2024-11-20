@@ -612,6 +612,10 @@ header {
     gap: 5px;
     margin: 20px;
 }
+
+.productos h2 {
+    font-size: 15px;
+}
 }
 
 @media screen and (max-width:380px) {
