@@ -1,0 +1,26 @@
+.nosotros {
+    img {
+        margin: 20px;
+        height: 350px;
+        width: 56%;
+        border-radius: 16px;
+    }
+    h2 {
+        font-family: klavika-bold;
+        background-color: $color-3;
+        color: $color-2;
+        text-align: center;
+        font-size: 30px;
+    }
+    p {
+        font-size: nth($f-size, 3);
+        text-align: center;
+        padding: 20px;
+        margin: 40px;
+        font-family: klavika-regular;
+    }
+}
+
+.nosotros-img {
+    @include flex(flex, center, center)
+}

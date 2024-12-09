@@ -1,0 +1,712 @@
+@charset "UTF-8";
+/* VARIABLES COLORES PRINCIPALES */
+/* VARIABLES COLORES SECUNDARIOS */
+/* Titulos hover */
+/* Background color */
+/* Border color */
+/* Bordes formulario */
+/* Card de productos */
+/* Background .info */
+/* LISTA */
+/* Tamaño de fuentes */
+/* EXTENDS */
+.servicios-info, .info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* MIXIN */
+@font-face {
+  font-family: klavika-regular;
+  src: url(../klavika/Klavika-Regular.otf);
+}
+@font-face {
+  font-family: klavika-bold;
+  src: url(../klavika/Klavika-Bold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: klavika-regular;
+  box-sizing: border-box;
+}
+
+/* Implementando Bootstrap en documento contacto */
+.mb-3 {
+  margin: 40px;
+  width: 40%;
+}
+
+.titulo-form {
+  margin: 40px;
+  margin-bottom: 10px;
+}
+
+.titulo-form h2 {
+  font-family: klavika-bold;
+}
+
+.boton-form {
+  border-radius: 8px;
+}
+
+.boton-form .btn-outline-success {
+  color: black;
+  border-color: rgba(124, 136, 17, 0.973);
+  background-color: rgb(183, 199, 42);
+}
+.boton-form .btn-outline-success:hover {
+  border-color: rgba(124, 136, 17, 0.973);
+  background-color: rgba(140, 155, 7, 0.973);
+}
+
+header {
+  background-color: black;
+  background-attachment: fixed;
+  font-size: 30px;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  font-family: klavika-regular;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 5px;
+}
+header div h1 {
+  font-family: klavika-bold;
+  font-style: italic;
+  font-weight: bolder;
+  color: white;
+  flex-direction: column;
+  -webkit-text-stroke: 0.5px rgb(183, 199, 42);
+}
+header nav ul {
+  list-style-type: none;
+  font-style: italic;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul li a {
+  font-family: klavika-regular;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 20px;
+}
+header nav ul li a:hover {
+  filter: brightness(1.3);
+  color: rgb(183, 199, 42);
+}
+
+footer {
+  padding: 10px;
+  background-color: rgb(183, 199, 42);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer div p {
+  font-size: 20px;
+  font-family: klavika-bold;
+  color: white;
+}
+footer div img {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+}
+
+.maps-footer {
+  width: 500px;
+  height: 150px;
+}
+
+.hero {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: klavika-regular;
+  height: 350px;
+  width: 70%;
+  background-image: url("../img/Hero Banner 2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.hero h2 {
+  font-family: klavika-bold;
+  text-align: center;
+  font-size: 60px;
+  color: rgba(140, 155, 7, 0.973);
+  -webkit-text-stroke: 1px white;
+}
+.hero p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+  background-color: black;
+  padding: 20px;
+}
+
+.promociones h3 {
+  font-size: 30px;
+  background-color: rgb(183, 199, 42);
+  text-align: center;
+  color: white;
+  font-family: klavika-bold;
+}
+
+.promociones-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.promociones-contenedor div {
+  border: 1px solid rgb(169, 169, 169);
+  width: 320px;
+  height: 440px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 5px 8px 34px -1px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 5px 8px 34px -1px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 5px 8px 34px -1px rgba(0, 0, 0, 0.52);
+}
+.promociones-contenedor div img {
+  padding: 10px;
+}
+.promociones-contenedor div p {
+  font-family: klavika-regular;
+  font-size: 15px;
+}
+.promociones-contenedor div h4 {
+  font-family: klavika-bold;
+}
+.promociones-contenedor div a {
+  text-decoration: none;
+  color: rgb(183, 199, 42);
+  background-color: black;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: klavika-regular;
+}
+
+.info {
+  text-align: center;
+  margin: 40px;
+  background-color: rgb(232, 247, 236);
+  font-size: 20px;
+  border-radius: 16px;
+  padding: 20px;
+}
+.info img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+.info h4 {
+  font-family: klavika-bold;
+}
+
+.categorias h3 {
+  font-family: klavika-bold;
+  font-size: 30px;
+  background-color: rgb(183, 199, 42);
+  text-align: center;
+  color: whitesmoke;
+}
+
+.categorias-contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.categorias-contenedor div {
+  font-family: klavika-bold;
+  border: 2px solid rgb(169, 169, 169);
+  width: 160px;
+  height: 170px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 10px 17px -2px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 10px 17px -2px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 10px 17px -2px rgba(0, 0, 0, 0.57);
+}
+.categorias-contenedor div:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.2);
+  background-color: rgba(0, 0, 0, 0.041);
+}
+.categorias-contenedor div img {
+  width: 100px;
+  height: 100px;
+}
+.categorias-contenedor div h4 {
+  font-family: klavika-bold;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.nosotros img {
+  margin: 20px;
+  height: 350px;
+  width: 56%;
+  border-radius: 16px;
+}
+.nosotros h2 {
+  font-family: klavika-bold;
+  background-color: rgb(183, 199, 42);
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.nosotros p {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  margin: 40px;
+  font-family: klavika-regular;
+}
+
+.nosotros-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productos h2 {
+  font-family: klavika-bold;
+  background-color: rgb(183, 199, 42);
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.productos-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.productos-contenedor div {
+  border: 2px solid rgb(169, 169, 169);
+  width: 130px;
+  height: 170px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 10px 17px -2px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 10px 17px -2px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 10px 17px -2px rgba(0, 0, 0, 0.57);
+}
+.productos-contenedor div:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.2);
+  background-color: rgba(0, 0, 0, 0.041);
+}
+.productos-contenedor img {
+  width: 100px;
+  height: 100px;
+}
+.productos-contenedor h3 {
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: klavika-bold;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+  margin: 40px;
+}
+.grid-galeria div {
+  position: relative;
+}
+.grid-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.grid-galeria h3 {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(15, 112, 88, 0.5);
+  width: 100%;
+  color: white;
+  padding: 10px;
+  font-family: klavika-bold;
+  font-size: 25px;
+}
+
+.grid-img1 {
+  grid-row: span 2;
+}
+
+.servicios img {
+  margin: 15px;
+  height: 300px;
+  border-radius: 16px;
+}
+.servicios h2 {
+  font-family: klavika-bold;
+  background-color: rgb(183, 199, 42);
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.servicios p {
+  font-family: klavika-regular;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  margin: 40px;
+}
+
+.servicios-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios-info {
+  text-align: center;
+  margin: 40px;
+  background-color: rgb(232, 247, 236);
+  font-size: 20px;
+  border-radius: 16px;
+  padding: 20px;
+}
+.servicios-info img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+.servicios-info h4 {
+  font-family: klavika-bold;
+}
+
+h2 {
+  font-family: klavika-bold;
+  text-align: center;
+  padding: 30px;
+}
+
+div .contacto {
+  font-family: klavika-regular;
+  height: 230px;
+  margin: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contacto section.contenedor-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-contacto {
+  margin: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-fiscal img {
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 940px) {
+  /*! ------ INDEX ------ */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero h2 {
+    font-size: 50px;
+    padding: 10px;
+  }
+  .hero p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .hero {
+    height: 200px;
+    width: 65%;
+  }
+  footer {
+    justify-content: space-evenly;
+  }
+  footer div img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  footer div p {
+    font-size: 15px;
+  }
+  footer .maps-footer {
+    width: 180px;
+    height: 120px;
+  }
+  .info {
+    margin: 20px;
+  }
+  .info div h4 {
+    font-size: 15px;
+  }
+  .promociones h3 {
+    font-size: 25px;
+  }
+  .categorias h3 {
+    font-size: 25px;
+  }
+  /*! ------ NOSOTROS ------ */
+  .nosotros-img {
+    background-image: url("../img/nosotros-banner1.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+  }
+  .nosotros img {
+    opacity: 0;
+  }
+  .nosotros h2 {
+    font-size: 25px;
+  }
+  .nosotros p {
+    font-size: 25px;
+    margin: 30px;
+    padding: 15px;
+  }
+  /*! ------ PRODUCTOS ------ */
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 10px;
+    margin: 30px;
+  }
+  .grid-galeria div h3 {
+    font-size: 20px;
+  }
+  .grid-img1 {
+    grid-row: span 2;
+  }
+  /*! ------ SERVICIOS ------ */
+  .servicios-img {
+    display: none;
+  }
+  .servicios h2 {
+    font-size: 25px;
+  }
+  .servicios p {
+    font-size: 25px;
+    margin: 30px;
+    padding: 15px;
+  }
+  .servicios-info {
+    margin: 20px;
+  }
+  .servicios-info div h4 {
+    font-size: 15px;
+  }
+  /*! ------ CONTACTO ------ */
+  .mb-3 {
+    margin: 0px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*! ------ INDEX ------ */
+  .hero {
+    width: 0%;
+  }
+  .hero h2 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .hero p {
+    font-size: 15px;
+    padding: 0px;
+  }
+  .info div h4 {
+    font-size: 10px;
+  }
+  .info img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+  }
+  header div h1 {
+    font-size: 20px;
+  }
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+  header nav ul {
+    list-style-type: none;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  header {
+    flex-direction: row;
+    width: 100%;
+  }
+  .promociones-contenedor div {
+    width: 80%;
+    height: 360px;
+  }
+  .promociones-contenedor p {
+    padding: 10px;
+  }
+  .promociones-contenedor div img {
+    width: 200px;
+    height: 200px;
+  }
+  .promociones h3 {
+    font-size: 15px;
+  }
+  .categorias h3 {
+    font-size: 15px;
+  }
+  footer div img {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+  }
+  footer div p {
+    font-size: 10px;
+  }
+  footer .maps-footer {
+    width: 100px;
+    height: 100px;
+  }
+  /*! ------ NOSOTROS ------ */
+  .nosotros-img {
+    background-image: url("../img/nosotros-banner1.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 100%;
+  }
+  .nosotros h2 {
+    font-size: 20px;
+  }
+  .nosotros p {
+    font-size: 15px;
+    margin: 15px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  /*! ------ PRODUCTOS ------ */
+  .grid-galeria div h3 {
+    font-size: 15px;
+  }
+  .grid-galeria {
+    grid-auto-rows: 150px;
+    gap: 5px;
+    margin: 20px;
+  }
+  .productos h2 {
+    font-size: 15px;
+  }
+  /*! ------ SERVICIOS ------ */
+  .servicios-info div h4 {
+    font-size: 10px;
+  }
+  .servicios-info img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+  }
+  .servicios h2 {
+    font-size: 20px;
+  }
+  .servicios p {
+    font-size: 15px;
+    margin: 15px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  /*! ------ CONTACTO ------ */
+  .mb-3 {
+    margin: 0px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 380px) {
+  /*! ------ INDEX ------ */
+  header {
+    height: 130px;
+    padding-bottom: 5px;
+  }
+  header div h1 {
+    display: none;
+  }
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /*! ------ NOSOTROS ------ */
+  /*! ------ PRODUCTOS ------ */
+  /*! ------ SERVICIOS ------ */
+  /*! ------ CONTACTO ------ */
+  .data-fiscal img {
+    width: 150px;
+    height: auto;
+  }
+  .mb-3 {
+    margin: 0px;
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=newstyles.css.map */

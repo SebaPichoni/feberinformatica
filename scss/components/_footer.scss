@@ -1,0 +1,24 @@
+footer {
+    padding: 10px;
+    background-color: $color-3;
+    background-attachment: fixed;
+    @include flex(flex, space-evenly, center);
+    div {
+        p {
+            font-size: nth($f-size, 2);
+            font-family: klavika-bold;
+            color: $color-2;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+            padding: 10px;
+        }
+        
+    }
+}
+
+.maps-footer {
+    width: 500px;
+    height: 150px;
+}

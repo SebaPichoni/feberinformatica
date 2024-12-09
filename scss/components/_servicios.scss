@@ -1,0 +1,43 @@
+.servicios {
+    img {
+        margin: 15px;
+        height: 300px;
+        border-radius: 16px;
+    }
+    h2 {
+        font-family: klavika-bold;
+        background-color: $color-3;
+        color: $color-2;
+        text-align: center;
+        font-size: nth($f-size, 4);
+    }
+    p {
+        font-family: klavika-regular;
+        font-size: nth($f-size, 3);
+        text-align: center;
+        padding: 20px;
+        margin: 40px;
+    }
+}
+
+.servicios-img {
+    @include flex(flex,center,center);
+}
+
+.servicios-info {
+        @extend %info;
+        text-align: center;
+        margin: 40px;
+        background-color: $color-9;
+        font-size: nth($f-size, 2);
+        border-radius: 16px;
+        padding: 20px;
+        img {
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+        }
+        h4 {
+            font-family: klavika-bold;
+        }
+    }

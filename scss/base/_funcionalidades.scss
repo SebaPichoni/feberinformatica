@@ -1,0 +1,29 @@
+/* VARIABLES COLORES PRINCIPALES */
+$color-1: black;
+$color-2: white;
+$color-3: rgb(183, 199, 42);
+
+/* VARIABLES COLORES SECUNDARIOS */
+$color-4: rgba(15, 112, 88, 0.5); /* Titulos hover */
+$color-5: rgba(140, 155, 7, 0.973); /* Background color */
+$color-6: rgba(124, 136, 17, 0.973); /* Border color */
+$color-7: rgb(169, 169, 169); /* Bordes formulario */
+$color-8: rgba(15, 112, 88, 0.5); /* Card de productos */
+$color-9: rgb(232, 247, 236); /* Background .info */
+
+/* LISTA */
+$f-size: 15px, 20px, 25px, 30px, 60px; /* Tamaño de fuentes */
+
+/* EXTENDS */
+%info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* MIXIN */
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

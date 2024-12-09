@@ -1,0 +1,36 @@
+h2 {
+    font-family: klavika-bold;
+    text-align: center;
+    padding: 30px;
+}
+div {
+    .contacto {
+    font-family: klavika-regular;
+    height: 230px;
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+}
+
+.contacto {
+    section.contenedor-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+.map-contacto {
+    margin: 30px;
+    margin-bottom: 40px;
+    @include flex(flex, center, center);
+}
+
+.data-fiscal {
+    img {
+        width: 200px;
+        height: auto;
+    }
+}
+
