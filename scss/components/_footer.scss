@@ -1,21 +1,34 @@
 footer {
     padding: 10px;
     background-color: $color-3;
+    background: linear-gradient(150deg, rgba(183,199,42,1) 0%, rgba(113,122,29,1) 100%);
     background-attachment: fixed;
     @include flex(flex, space-evenly, center);
+    flex-direction: column;
     div {
         p {
             font-size: nth($f-size, 2);
             font-family: klavika-bold;
             color: $color-2;
+            text-align: center;
         }
         img {
             width: 70px;
             height: 70px;
             padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
         }
         
     }
+}
+
+footer .logos-redes {
+    @include flex(flex, space-evenly, center);
 }
 
 .maps-footer {

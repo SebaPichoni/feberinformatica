@@ -37,7 +37,35 @@
             height: 80px;
             padding: 10px;
         }
-        h4 {
+        h3 {
             font-family: klavika-bold;
         }
     }
+
+.imagen {
+    border: 3px solid rgba(0, 0, 0, 0.212);
+    border-radius: 16px;
+    display: flex;
+    margin: 10px;
+    width: 246px;
+    height: 150px;
+    box-shadow: 30px 10px 20px -2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.57);
+    &:hover {
+        transform: scale(1.2);
+        transition: 1.1s;
+    }
+    img {
+        border-radius: 12px;
+    }
+}
+
+.imagenes-contenedor {
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
